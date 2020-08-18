@@ -1,4 +1,5 @@
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class Transaction {
 	
@@ -50,10 +51,30 @@ public class Transaction {
 	}
 	
 	public String toString() {
-		String output = "";
+//		txnDate = LocalDateTime.now();
+
+		// Inbuilt format
+//		DateTimeFormatter format = DateTimeFormatter.ISO_DATE_TIME;
+//		 
+//		// Custom format
+//		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+		 
+		// Format LocalDateTime
+//		String formattedDateTime = txnDate.format(formatter);
+		String output = String.format("%-20s %-20s %-20s %-20.6f %-20s %-20.6f %-20.6f\n", 
+				"18/8/2020",
+				type, 
+				ccyIn,
+				amtIn,
+				ccyOut,
+				amtOut,
+				rate
+				);
+		
 		return output;
 		
 	}
+	
 	
 	
 	
