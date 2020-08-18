@@ -9,9 +9,20 @@ public class C206_CaseStudy {
 		int exit = 6;
 		while (option != exit) {
 			C206_CaseStudy.menu();
-			
+			if(option == 1) {
+				
+			}
+			else if(option == 5) {
+				
+			}
 		}
 	}
+	
+	
+	
+	
+	
+	
 	public static void setHeader(String header) {
 		Helper.line(80, "-");
 		System.out.println(header);
